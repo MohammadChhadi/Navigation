@@ -22,5 +22,13 @@
     <fragment
         android:id="@+id/settingsFragment"
         android:name="com.mohamad.navigation.SettingsFragment"
-        android:label="SettingsFragment" />
+        android:label="Settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_languageFragment"
+            app:destination="@id/languageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/languageFragment"
+        android:name="com.mohamad.navigation.LanguageFragment"
+        android:label="Language" />
 </navigation>
